@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="schoolthings.css" />
+    <title>School Links</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>&gt;_ School</h1>
+        </header>
+
+        <main>
+            <div id="terminalimage">
+                <img src="ASSets/img/uwu.png" alt="Terminal Icon">
+            </div>
+            <pre id="terminal-intro"></pre>
+            <pre hidden id="terminal-loaded">
+            Pat:/home/school$ ls
+
+            💾 Patrick Tobin
+            └📁 School things
+            <a href="https://docs.google.com/document/d/151gXYrZ_rvFmwMYAtbexRWDAjpN0I8EtNDNE45WdFiw/edit?usp=sharing" target="_blank">  ┠📁 Random english/computer thing</a>
+            <a href="https://docs.google.com/presentation/d/1buK2R6zxzhm0ohkhsyS3vNEBODZCN0LXk_bD6Hxvyg0/edit#slide=id.g11380a05d27_0_0" target="_blank">  ┠📁 Learn Circuits slides</a>
+            <a href="https://scratch.mit.edu/projects/842465400/" target="_blank">  ┠📁 Scratch game I made :D</a>
+            <a href="https://www.atmpatstar.com/" target="_blank">  ┠📁 Original Website</a>
+            <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&feature=youtu.be" target="_blank">  ┠📁 This website's code :D</a>
+            </pre>
+        </main>
+        <footer>
+            <a href="am.html" class="btn">Go Back</a>
+        </footer>
+
+        <div id="volumeSliderContainer">
+            <input type="range" id="volumeSlider" min="0" max="100" value="100" step="1">
+            <div id="volumeSliderValue">Volume: 100</div>
+        </div>
+
+        <audio id="looped-audio" loop autoplay>
+            <source src="ASSets/music/terminal.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <script src="schoolthings.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  #video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  #looping-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  #volume-slider {
+    width: 100%;
+  }
+  
+/* Your existing CSS styles */
+
+footer {
+    background-color: rgba(153, 151, 151, 0.158);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #go-back-button,
+  #skip-button {
+    text-decoration: none;
+    color: #fff; /* Change text color to white */
+    padding: 5px 10px;
+    border: none; /* Remove border */
+    background-color: #000; /* Black background */
+    cursor: pointer;
+    border-radius: 5px; /* Add rounded corners */
+  }
+  
+  #go-back-button:hover,
+  #skip-button:hover {
+    background-color: #333; /* Darken the background color on hover */
+  }
+  
+  #skip-button {
+    margin-left: 10px;
+  }
+  
+  /* Your existing CSS styles */
+  

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital School Notebook</title>
+    <style>
+        /* Style for the tabs */
+        .tab {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            margin-bottom: 5px;
+        }
+
+        /* Style for the content within the tabs */
+        .content {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+    <nav> 
+        <p> Notes</p>
+    </nav>
+</head>
+<body>
+    <div class="tab" onclick="toggleContent('notes9/11')">Notes 9/11</div>
+    <div class="content" id="notes9/11">
+        <!-- Content for Notes (Day) -->
+        <p>Time is always a constant
+
+            speed= distance/time
+            
+            Note 9/11
+            
+            Displacement
+             displacement = change in position = final position - initial position
+             
+            Average velocity
+            (insert img)
+            </p>
+    </div>
+
+    <div class="tab" onclick="toggleContent('notes9/12')">Notes 9/12</div>
+    <div class="content" id="notes9/12">
+        <!-- Content for Notes (Week) -->
+        <p>on paper</p>
+    </div>
+
+    <div class="tab" onclick="toggleContent('notes9/14')">Notes 9/14</div>
+    <div class="content" id="notes9/14">
+        <!-- Content for Notes (Week) -->
+        <p>on paper</p>
+    </div>
+
+    <div class="tab" onclick="toggleContent('Unknown')">Unknown for now</div>
+    <div class="content" id="Unknown">
+        <!-- Content for Assignments -->
+        <p>notes.</p>
+    </div>
+
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

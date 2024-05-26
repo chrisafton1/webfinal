@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="ASSets/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="start-screen" id="startScreen">
+    <div class="background-overlay"></div>
+    <div class="start-text">Click to Enter</div>
+  </div>
+
+  <div class="next-screen" style="display: none;" id="nextScreen">
+    <video autoplay muted loop id="background-video">
+      <source id="background-source" src="ASSets/vids/backvid.webm" type="video/webm">
+    </video>
+    <div class="grid-overlay"></div>
+
+    <div class="banner">
+      <div class="banner-text">Pat's Website :D</div>
+    </div>
+    
+    <div id="popupgothic">Inspired by ruub</div>
+
+    <div class="icon-container">
+      <a href="https://discord.gg/hxW9XQNgPq" target="_blank">
+        <img class="icon" src="ASSets/img/discord.png" alt="Discord">
+        <span class="hover-text">Discord</span>
+      </a>
+      <a href="https://twitter.com/Spicygreenbacon" target="_blank">
+        <img class="icon" src="ASSets/img/twitter.png" alt="Twitter">
+        <span class="hover-text">Twitter</span>
+      </a>
+      <a href="https://www.instagram.com/spicygreenbacon/" target="_blank">
+        <img class="icon" src="ASSets/img/insta100.png" alt="Instagram">
+        <span class="hover-text">Instagram</span>
+      </a>
+      <a href="am.html" target="_self">
+        <img class="icon" src="ASSets/img/icon3.png" alt="About Me">
+        <span class="hover-text">About Me</span>
+      </a>
+    </div>
+
+    <div class="text-popup" id="textPopup">Sorry bro, nothing here yet</div>
+
+    <div class="now-playing-box" id="nowPlayingBox">
+      <span class="now-playing-text" id="nowPlayingText"></span>
+      <button class="play-pause-button" id="playPauseButton"></button>
+      <button class="skip-button" id="skipButton"></button>
+    </div>
+
+    <div class="volume-slider">
+      <input type="range" id="volume" min="0" max="100" step="1" value="100">
+    </div>
+  </div>
+
+  <audio id="background-audio"></audio>
+
+  <script src="script.js"></script>
+  <script src="tab.js"></script>
+</body>
+</html>

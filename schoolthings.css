@@ -1,0 +1,119 @@
+body {
+    background-color: #28292c;
+    color: #fa5ed6;
+    font-family: monospace;
+}
+
+.container {
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 25px;
+    font-family: monospace, cursive;
+    margin: 20px 0;
+    color: #fa5ed6;
+}
+
+main {
+    margin-top: 30px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Terminal */
+
+pre {
+    font-size: 25px; /* Adjust the font size as needed */
+    line-height: 1.5; /* Adjust line spacing as needed */
+}
+
+pre a {
+    color: #fa5ed6;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+pre a:hover {
+    color: #f9c7d5;
+}
+
+/* Button */
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+#looped-audio {
+    display: none;
+}
+
+#terminalimage {
+    margin-right: 20px; /* Adjust the margin as needed */
+    order: -1; /* This will move the image to the left */
+}
+
+#terminalimage img {
+    max-width: 150px; /* Adjust the image size as needed */
+}
+
+#volumeSliderContainer {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px; /* Adjust the width as needed */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 9999;
+  }
+
+  /* Add your existing CSS styles here */
+
+#volumeSliderContainer {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px; /* Adjust the width as needed */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 9999;
+  }
+  
+  #volumeSlider {
+    width: 100%; /* Adjust as needed */
+    height: 10px; /* Adjust as needed */
+    background-color: #ccc;
+    border: none;
+    appearance: none; /* Remove default styles */
+    cursor: pointer;
+  }
+  
+  #volumeSlider::-webkit-slider-thumb {
+    appearance: none; /* Remove default styles */
+    width: 20px; /* Adjust as needed */
+    height: 20px; /* Adjust as needed */
+    background-color: #007bff; /* Adjust the color as needed */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
